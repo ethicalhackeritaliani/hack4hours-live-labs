@@ -55,7 +55,7 @@ const FirstLab = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 rounded-full bg-accent/10 text-accent text-sm font-mono mb-4">
-              PROSSIMO LABORATORIO
+              PRIMO LABORATORIO • MOLTI ALTRI IN ARRIVO
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               <span className="gradient-text">Mission Root</span>
