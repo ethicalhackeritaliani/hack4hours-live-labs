@@ -17,7 +17,7 @@ const Formula = () => {
     {
       icon: MousePointer,
       title: "Replica Guidata",
-      description: "Un partecipante prende il controllo e prova a replicare, mentre tutti seguono e fanno domande.",
+      description: "Ogni partecipante si connette alla VPN e replica i passaggi sul proprio ambiente, mentre tutti seguono e fanno domande.",
       color: "accent",
     },
     {
