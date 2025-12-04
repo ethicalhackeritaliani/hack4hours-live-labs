@@ -38,7 +38,7 @@ const FirstLab = () => {
     },
     {
       icon: FileText,
-      title: "Reporting",
+      title: "Attacco a macchine reali",
       description: "Redigerai un report professionale orientato alla remediation.",
     },
   ];
