@@ -36,9 +36,15 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="xl" className="group">
-              <Zap className="w-5 h-5 group-hover:animate-pulse" />
-              Acquista Ticket – €97
+            <Button variant="hero" size="xl" className="group" asChild>
+              <a 
+                href="https://accademia.ethicalhackeritaliani.it/p/hack4hours-laboratori-live" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Zap className="w-5 h-5 group-hover:animate-pulse" />
+                Acquista Ticket – €97
+              </a>
             </Button>
             <Button variant="cyber" size="xl">
               <Shield className="w-5 h-5" />
