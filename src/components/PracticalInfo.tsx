@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, MapPin, Euro, Users, Zap } from "lucide-react";
+import { Calendar, Clock, MapPin, Euro, Users, Zap, Shield } from "lucide-react";
 
 const PracticalInfo = () => {
   const info = [
@@ -72,7 +72,20 @@ const PracticalInfo = () => {
             <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
               Unisciti alla community di Ethical Hacker Italiani e inizia il tuo percorso pratico nella cybersecurity.
             </p>
+            <p className="text-sm text-amber-400 font-semibold mb-4">
+              ⚠️ Prima di acquistare, è necessario registrarsi!
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cyber" size="xl" className="group border-amber-400 text-amber-400 hover:bg-amber-400/10 hover:shadow-[0_0_20px_hsl(45_100%_50%/0.3)]" asChild>
+                <a 
+                  href="https://calendar.ethicalhackeritaliani.it" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Shield className="w-5 h-5" />
+                  Registrati Ora (Gratis)
+                </a>
+              </Button>
               <Button variant="hero" size="xl" className="group" asChild>
                 <a 
                   href="https://accademia.ethicalhackeritaliani.it/p/hack4hours-laboratori-live" 
