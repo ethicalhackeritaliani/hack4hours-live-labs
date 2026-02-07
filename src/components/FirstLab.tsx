@@ -108,9 +108,15 @@ const FirstLab = () => {
 
           {/* CTA */}
           <div className="text-center">
-            <p className="text-sm text-amber-400 font-semibold mb-4">
-              ⚠️ Prima di acquistare, è necessario registrarsi!
-            </p>
+            <div className="bg-muted/50 border border-amber-400/30 rounded-xl p-4 mb-6 max-w-lg mx-auto">
+              <p className="text-amber-400 font-bold text-base mb-1">
+                ⚠️ IMPORTANTE – Leggi prima di acquistare:
+              </p>
+              <ul className="text-amber-300/90 text-sm space-y-1 text-left list-disc list-inside">
+                <li><strong>1.</strong> Clicca su <strong>"Registrati Ora"</strong> per scoprire le <strong>date disponibili</strong> e prenotare il tuo posto</li>
+                <li><strong>2.</strong> Solo dopo la registrazione potrai procedere con il <strong>pagamento</strong></li>
+              </ul>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="cyber" size="xl" className="group border-amber-400 text-amber-400 hover:bg-amber-400/10 hover:shadow-[0_0_20px_hsl(45_100%_50%/0.3)]" asChild>
                 <a 
