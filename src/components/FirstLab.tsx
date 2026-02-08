@@ -112,7 +112,10 @@ const FirstLab = () => {
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-background font-bold text-xs px-4 py-1 rounded-full tracking-wider uppercase">
                 Leggi prima di acquistare
               </div>
-              <div className="mt-2 space-y-3">
+              <p className="mt-2 mb-3 text-center text-amber-400 font-bold text-sm tracking-wide">
+                ⚠️ NON procedere al pagamento senza prima esserti registrato!
+              </p>
+              <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="flex-shrink-0 w-7 h-7 rounded-full bg-amber-400 text-background font-bold text-sm flex items-center justify-center">1</span>
                   <p className="text-foreground text-sm leading-relaxed">
