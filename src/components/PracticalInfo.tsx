@@ -72,14 +72,24 @@ const PracticalInfo = () => {
             <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
               Unisciti alla community di Ethical Hacker Italiani e inizia il tuo percorso pratico nella cybersecurity.
             </p>
-            <div className="bg-muted/50 border border-amber-400/30 rounded-xl p-4 mb-6 max-w-lg mx-auto">
-              <p className="text-amber-400 font-bold text-base mb-1">
-                ⚠️ IMPORTANTE – Leggi prima di acquistare:
-              </p>
-              <ul className="text-amber-300/90 text-sm space-y-1 text-left list-disc list-inside">
-                <li><strong>1.</strong> Clicca su <strong>"Registrati Ora"</strong> per scoprire le <strong>date disponibili</strong> e prenotare il tuo posto</li>
-                <li><strong>2.</strong> Solo dopo la registrazione potrai procedere con il <strong>pagamento</strong></li>
-              </ul>
+            <div className="relative max-w-lg mx-auto mb-6 rounded-2xl border-2 border-amber-400/40 bg-gradient-to-br from-amber-400/10 via-amber-500/5 to-transparent p-5 backdrop-blur-sm shadow-[0_0_30px_hsl(45_100%_50%/0.08)]">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-background font-bold text-xs px-4 py-1 rounded-full tracking-wider uppercase">
+                Leggi prima di acquistare
+              </div>
+              <div className="mt-2 space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-amber-400 text-background font-bold text-sm flex items-center justify-center">1</span>
+                  <p className="text-foreground text-sm leading-relaxed">
+                    Clicca su <strong className="text-amber-400">"Registrati Ora"</strong> per scoprire le <strong className="text-amber-400">date disponibili</strong> e prenotare il tuo posto
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-amber-400 text-background font-bold text-sm flex items-center justify-center">2</span>
+                  <p className="text-foreground text-sm leading-relaxed">
+                    Solo dopo la registrazione potrai procedere con il <strong className="text-amber-400">pagamento</strong>
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="cyber" size="xl" className="group border-amber-400 text-amber-400 hover:bg-amber-400/10 hover:shadow-[0_0_20px_hsl(45_100%_50%/0.3)]" asChild>
