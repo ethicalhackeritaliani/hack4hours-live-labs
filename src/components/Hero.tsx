@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="cyber" size="xl" className="group border-amber-400 text-amber-400 hover:bg-amber-400/10 hover:shadow-[0_0_20px_hsl(45_100%_50%/0.3)]" asChild>
               <a 
-                href="https://calendar.ethicalhackeritaliani.it" 
+                href="https://prenotazioni.scuolaperhacker.it" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
