@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, MapPin, Euro, Users, Zap, Shield } from "lucide-react";
+import PurchaseWarningDialog from "@/components/PurchaseWarningDialog";
 
 const PracticalInfo = () => {
+  const [showWarning, setShowWarning] = useState(false);
   const info = [
     {
       icon: Calendar,
@@ -105,17 +108,12 @@ const PracticalInfo = () => {
                   Registrati Ora (Gratis)
                 </a>
               </Button>
-              <Button variant="hero" size="xl" className="group" asChild>
-                <a 
-                  href="https://accademia.ethicalhackeritaliani.it/p/hack4hours-laboratori-live" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Zap className="w-5 h-5 group-hover:animate-pulse" />
-                  Acquista Ticket – €97
-                </a>
+              <Button variant="hero" size="xl" className="group" onClick={(e) => { e.preventDefault(); setShowWarning(true); }}>
+                <Zap className="w-5 h-5 group-hover:animate-pulse" />
+                Acquista Ticket – €97
               </Button>
             </div>
+            <PurchaseWarningDialog open={showWarning} onOpenChange={setShowWarning} />
             <p className="text-sm text-muted-foreground mt-6">
               Posti limitati • Registrazione inclusa • Supporto community
             </p>
