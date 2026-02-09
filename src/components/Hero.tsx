@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Terminal, Shield, Zap } from "lucide-react";
+import PurchaseWarningDialog from "@/components/PurchaseWarningDialog";
 
 const Hero = () => {
+  const [showWarning, setShowWarning] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden cyber-grid">
       {/* Background effects */}
@@ -68,17 +71,12 @@ const Hero = () => {
                 Registrati Ora (Gratis)
               </a>
             </Button>
-            <Button variant="hero" size="xl" className="group" asChild>
-              <a 
-                href="https://accademia.ethicalhackeritaliani.it/p/hack4hours-laboratori-live" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Zap className="w-5 h-5 group-hover:animate-pulse" />
-                Acquista Ticket – €97
-              </a>
+            <Button variant="hero" size="xl" className="group" onClick={(e) => { e.preventDefault(); setShowWarning(true); }}>
+              <Zap className="w-5 h-5 group-hover:animate-pulse" />
+              Acquista Ticket – €97
             </Button>
           </div>
+          <PurchaseWarningDialog open={showWarning} onOpenChange={setShowWarning} />
           
           {/* Stats */}
           <div className="animate-fade-up-delay-3 grid grid-cols-3 gap-4 md:gap-8 max-w-xl mx-auto">
