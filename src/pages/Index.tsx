@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Formula from "@/components/Formula";
@@ -13,6 +14,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
+      <Navbar />
       <Hero />
       <Problem />
       <Formula />
