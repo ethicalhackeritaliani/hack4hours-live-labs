@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Formula from "@/components/Formula";
 import Benefits from "@/components/Benefits";
-import FirstLab from "@/components/FirstLab";
+import EventsPreview from "@/components/EventsPreview";
 import WhatYouGet from "@/components/WhatYouGet";
 import VPNSetup from "@/components/VPNSetup";
 import FidelityProgram from "@/components/FidelityProgram";
@@ -17,7 +17,7 @@ const Index = () => {
       <Problem />
       <Formula />
       <Benefits />
-      <FirstLab />
+      <EventsPreview />
       <WhatYouGet />
       <VPNSetup />
       <FidelityProgram />
