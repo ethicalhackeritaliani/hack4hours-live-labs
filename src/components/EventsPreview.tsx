@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Terminal, ArrowRight, Search, Server, Zap } from "lucide-react";
+import { Terminal, ArrowRight, Search, Server, Zap, Ghost } from "lucide-react";
 
 const events = [
   {
@@ -16,6 +16,13 @@ const events = [
     subtitle: "Domina il Dominio",
     description: "Dalla ricognizione AD al Domain Controller: Kerberoasting, Lateral Movement, DCSync.",
     icon: Server,
+  },
+  {
+    tag: "LAB #3",
+    title: "Track the Ghost",
+    subtitle: "Dal primo indizio alla compromissione finale",
+    description: "OSINT, metadati, PCAP, SQL Injection e SSH pivoting: una vera catena di attacco su 3 macchine target.",
+    icon: Ghost,
   },
 ];
 

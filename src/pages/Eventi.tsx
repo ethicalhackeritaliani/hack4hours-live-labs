@@ -23,6 +23,13 @@ import {
   ScanEye,
   ShieldAlert,
   ChevronLeft,
+  Ghost,
+  FileSearch,
+  Users,
+  Globe,
+  Activity,
+  Route,
+  KeyRound,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import PurchaseWarningDialog from "@/components/PurchaseWarningDialog";
@@ -99,6 +106,38 @@ const eventsData: EventData[] = [
     accentHsl: "hsl(180 100% 45% / 0.08)",
     registrationLink: "https://prenotazioni.scuolaperhacker.it",
     icon: Server,
+  },
+  {
+    id: "track-the-ghost",
+    badge: "LABORATORIO #3",
+    badgeColor: "bg-primary/10 text-primary",
+    title: "Track the Ghost",
+    subtitle: "Dal primo indizio alla compromissione finale",
+    shortDescription: "Segui le tracce di un'infrastruttura aziendale fittizia: OSINT, metadati, PCAP, SQL Injection e SSH pivoting in una vera catena di attacco.",
+    description:
+      "Preparati a entrare in una vera catena di attacco. Track the Ghost è un evento pratico in cui dovrai seguire le tracce lasciate da un'infrastruttura aziendale fittizia, raccogliere informazioni, collegare gli indizi e avanzare progressivamente fino a raggiungere il server finale. Non assisterai a una dimostrazione: sarai tu a investigare, analizzare e sfruttare ciò che trovi. Lavorerai su 3 macchine target affrontando 10 flag in circa 4-5 ore di attività pratica.",
+    missions: [
+      { icon: ScanEye, title: "OSINT e Reconnaissance", description: "Raccoglierai informazioni pubbliche sul dominio target e mapperai la superficie d'attacco." },
+      { icon: FileSearch, title: "Analisi Metadati PDF & EXIF", description: "Estrai informazioni nascoste dai metadati di documenti e immagini." },
+      { icon: Key, title: "Ricerca e Cracking Credenziali", description: "Troverai credenziali esposte e le crackerai per ottenere accessi." },
+      { icon: Users, title: "Creazione Userlist e Password List", description: "Costruirai wordlist personalizzate a partire dalle informazioni raccolte." },
+      { icon: Globe, title: "Accesso a Portali Protetti", description: "Utilizzerai le credenziali per accedere a portali aziendali riservati." },
+      { icon: Activity, title: "Analisi File PCAP", description: "Analizzerai traffico di rete con Wireshark e tshark per estrarre dati sensibili." },
+      { icon: Database, title: "SQL Injection & UNION SQLi", description: "Sfrutterai UNION-based SQL Injection per accedere a dati protetti." },
+      { icon: KeyRound, title: "Recupero Credenziali SSH", description: "Recupererai credenziali SSH dai sistemi compromessi." },
+      { icon: Network, title: "Pivoting verso Sistemi Interni", description: "Ti sposterai lateralmente verso sistemi interni non esposti." },
+      { icon: Route, title: "SSH Tunneling", description: "Creerai tunnel SSH per raggiungere servizi non direttamente accessibili." },
+    ],
+    tools: ["Wireshark", "tshark", "exiftool", "SQLmap", "Hydra", "John", "SSH", "Nmap"],
+    details: [
+      { icon: Clock, label: "Durata", value: "4-5 ore" },
+      { icon: Calendar, label: "Quando", value: "Un sabato al mese" },
+      { icon: MapPin, label: "Dove", value: "Online – Google Meet" },
+      { icon: Euro, label: "Costo", value: "€97" },
+    ],
+    accentHsl: "hsl(258 90% 65% / 0.08)",
+    registrationLink: "https://prenotazioni.scuolaperhacker.it",
+    icon: Ghost,
   },
 ];
 
